@@ -53,10 +53,6 @@ async def on_ready():
     Joined Guilds ({len(client.guilds)}):
     {''.join(f"{en}{guild.name}" for guild in client.guilds)}""", client)
 	client.add_cog(AFK(client))
-    #remove the next 3 lines
-	c=client.get_channel(725641711770009623)
-	while(True):
-		await c.send(input())
 
 
 @client.event
