@@ -17,7 +17,7 @@ import os
 import webserver
 import requests
 from webserver import keep_alive
-#exit()
+
 intent = discord.Intents(guilds=True, members=True, messages=True)
 help_command = commands.DefaultHelpCommand(no_category='Help')
 client = commands.Bot(command_prefix=('B ', 'b '),
@@ -80,7 +80,7 @@ async def on_command_error(ctx, error):
 	elif isinstance(error, commands.CommandInvokeError):
 		await ctx.send(
 		    f""":no_entry_sign: An Error occured inside the command. That's Usually Because I lack permission to embed links here.
-Try messaging at <#839478868289257532> or contact <@614784461430587413>. Ping:`{round(client.latency * 1000)}ms`
+Ping:`{round(client.latency * 1000)}ms`
 Error Info: `{error}`""")
 		raise error
 	elif isinstance(error, commands.CommandNotFound):
