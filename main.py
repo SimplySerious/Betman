@@ -61,7 +61,7 @@ async def on_guild_join(guild):
 	emb = discord.Embed(
 	    title="Umm Hi",
 	    description=
-	    "Thanks for adding me into your server sensai.\nSeems like you are a beta tester",
+	    "Thanks for adding me into your server.\nSeems like you are a beta tester",
 	    color=discord.Colour.blue())
 	for chan in guild.text_channels:
 		channel = client.get_channel(chan.id)
